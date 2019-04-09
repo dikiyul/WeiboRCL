@@ -21,6 +21,7 @@
 ## 2. 预测数据（weibo_predict_data(new)）
 
 **2015-08-01至2015-08-31**
+
 | 字段 | 字段说明 |    字段说明   |
 |:----:|:--------:|:-------------:|
 |  uid | 用户标记 | 抽样&字段加密 |
@@ -31,6 +32,7 @@
 ## 3. 选手需要提交的数据（weibo_result_data）
 
 选手对预测数据（weibo_predict_data）中每条博文一周后的转、评、赞值进行预测。
+
 | 字段 | 字段说明 |    字段说明   |
 |:----:|:--------:|:-------------:|
 |  uid | 用户标记 | 抽样&字段加密 |
@@ -46,18 +48,22 @@
 参赛队对于每一条博文预测出发表一周后的转发数、评论数和赞的数目，对于每一项均和真实值计算偏差：
 
 转发偏差：
+
 <font size=6>$deviation_f = \frac{|count_{fp} - count_{fr}|}{count_{fr} + 5}$</font>
 
 评论偏差：
+
 <font size=6>$deviation_c = \frac{|count_{cp} - count_{cr}|}{count_{cr} + 3}$</font>
 
 赞偏差：
+
 <font size=6>$deviation_l = \frac{|count_{lp} - count_{lr}|}{count_{lr} + 3}$</font>
 
 注：
+
 1. $count_{fp}$为预测的转发数，$count_{fr}$为实际的转发数；
 2. $count_{cp}$为预测的评论数，$count_{cr}$为实际的评论数；
-1. $count_{lp}$为预测的赞数，$count_{lr}$为实际的赞数。
+3. $count_{lp}$为预测的赞数，$count_{lr}$为实际的赞数。
 
 综合上述三项偏差，计算第i篇博文的准确率：
 
