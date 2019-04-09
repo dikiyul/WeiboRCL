@@ -1,3 +1,6 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
 # 竞赛题目
 
 对于一条原创博文而言,转发、评论、赞等互动行为能够体现出用户对于博文内容的兴趣程度，也是对博文进行分发控制的重要参考指标。**本届赛题的任务就是根据抽样用户的原创博文在发表一周后的转发、评论、赞总数，建立博文的互动模型，并预测用户后续博文在发表一周后的互动情况。**
